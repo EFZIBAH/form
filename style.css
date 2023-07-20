@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 400px;
+  background-color: rgb(0, 31, 11);
+  /* text-align: center; */
+  padding: 30px 0;
+}
+#btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn button:nth-child(1),#btn button:nth-child(2){
+  padding: 15px 50px;
+  background-color: rgb(73, 73, 76);
+  margin: 20px 0px;
+  border: none;
+  margin: 5px;
+}
+#btn button:nth-child(1):hover,#btn button:nth-child(2):hover{
+  background-color: rgb(118, 118, 121);
+}
+#btn button:nth-child(1):active,#btn button:nth-child(2):active{
+  background-color: rgb(6, 143, 45);
+  border: none;
+}
+.form h1{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 15px 20px ;
+}
+.name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 32px;
+
+}
+#lname,#fname{
+  width: 90%;
+  padding: 5px 15px;
+  border: 1px white solid;
+}
+#email, #password{
+  width: 80%;
+  margin: 10px 32px;
+  padding: 5px 15px;
+  border: 1px white solid;
+}
+#lname:hover,#fname:hover,#email:hover, #password:hover{
+  border: 1px rgb(220, 17, 17) solid;
+}
+.submit{
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  
+
+}
+#submit{
+  padding: 15px 0px;
+  width: 60%;
+}
+#submit:hover{
+  background-color: aqua;
+}
+
+
