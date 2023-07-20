@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
 </head>
+
 <body>
-  <section>
-    <div class="container">
-      <div id="btn">
-        <button>Sign Up</button>
-        <button>Log In</button>
-      </div>
-      <div class="form">
-        <h1>Sign Up For Free</h1>
-        <div action="" method="get">
-          <div class="name">
-            <div>
-              <input type="text" id="fname" placeholder="First Name">
-              <p id="demo1"></p>
+    <section>
+        <div class="container">
+            <div id="btn">
+                <button class="active" id="signupBtn">Sign Up</button>
+                <button class="" id="loginBtn">Log In</button>
             </div>
-            <div>
-              <input type="text" id="lname" placeholder="Last Name">
-              <p id="demo2"></p>
+            <form id="signupForm" class="form signup">
+                <h1>Sign Up For Free</h1>
+                <div action="" method="get">
+                    <div class="name">
+                        <div>
+                            <input type="text" id="fname" placeholder="First Name">
+                            <p id="demo1"></p>
+                        </div>
+                        <div>
+                            <input type="text" id="lname" placeholder="Last Name">
+                            <p id="demo2"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="Email">
+                        <p id="demo3"></p>
+                    </div>
+                    <div>
+                        <input type="password" id="password" placeholder="Password">
+                        <p id="demo"></p>
+                    </div>
+                    <div class="submit">
+                        <input id="submit" type="submit" value="Get Started">
+                    </div>
+                </div>
+            </form>
+
+            <div id="loginForm" style="display: none;" class="form login">
+                <h1>Login</h1>
+                <form id="loginSubmit" action="" method="get">
+                    <div>
+                        <input type="text" id="loginemail" placeholder="Email">
+                        <p id="logindemo3" style="color: white; display: none;">invalid email</p>
+                    </div>
+                    <div>
+                        <input type="password" id="loginpassword" placeholder="Password">
+                        <p id="demo"></p>
+                    </div>
+                    <div class="submit">
+                        <input  type="submit" value="Login">
+                    </div>
+                </form>
             </div>
-          </div>
-          <div>
-            <input type="email" id="email" placeholder="Email">
-            <p id="demo3"></p>
-          </div>
-          <div>
-            <input type="password" id="password" placeholder="Password">
-            <p id="demo"></p>
-          </div>
-          <div class="submit">
-            <input id="submit" type="submit" onclick="empty()" value="Get Started">
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <script src="./index.js"></script>
+    <script src="./index.js"></script>
 </body>
+
 </html>
